@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -40,19 +41,20 @@
         app:srcCompat="@android:drawable/btn_star" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="370dp"
         android:layout_height="238dp"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
 
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TitleBackGround"
-        app:layout_constraintVertical_bias="0.050000012"
-        android:layout_marginStart="8dp">
+        app:layout_constraintVertical_bias="0.050000012">
 
         <TextView
             android:id="@+id/mainButton1"
@@ -60,10 +62,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#009688"
+            android:onClick="goToLogActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/log_body_temperature"
-            android:onClick="goToLogActivity"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
@@ -78,10 +80,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#009688"
+            android:onClick="goToNormalActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/check_normal_range"
-            android:onClick="goToNormalActivity"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
@@ -96,10 +98,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#009688"
+            android:onClick="goToMechanismActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/mechanism_of_fever"
-            android:onClick="goToMechanismActivity"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
@@ -114,10 +116,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#009688"
+            android:onClick="goToHandleActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/handling_fever"
-            android:onClick="goToHandleActivity"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
@@ -126,6 +128,19 @@
             android:layout_width="match_parent"
             android:layout_height="3dp" />
     </LinearLayout>
-    
+
+    <Button
+        android:id="@+id/setReminderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setReminder"
+        android:text="Set Reminder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.14" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
