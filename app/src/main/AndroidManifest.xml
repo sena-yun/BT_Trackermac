@@ -17,7 +17,7 @@
         <activity android:name=".HandleActivity" />
         <activity android:name=".MechanismActivity" />
         <activity android:name=".NormalActivity" />
-        <activity android:name=".LogActivity" />
+        <activity android:name=".LogActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

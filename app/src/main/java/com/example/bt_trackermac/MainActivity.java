@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity<CreateNotification> extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 System.currentTimeMillis(),interval,pd);
     }
 
-    public void createNotificationChannel(){
-        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.O) {
+    public void createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             String channelID = "BT_Tracker_Channel";
             String channelName = "BTTrackerReminderChannel";
             String channelDescription = "Channel for BT Tracker reminder";
@@ -69,4 +69,5 @@ public class MainActivity extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
     }
+
 }
