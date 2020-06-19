@@ -11,8 +11,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/TitleBackGround"
         android:layout_width="0dp"
         android:layout_height="202dp"
-        android:background="#009688"
+        android:background="#e4b1ab"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,7 +26,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_marginBottom="32dp"
         android:text="BT_Tracker"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#FBFBFB"
+        android:textColor="#212529"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/TitleBackGround"
         app:layout_constraintStart_toEndOf="@+id/titleimage" />
 
@@ -47,7 +49,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="10dp"
-
         android:layout_marginRight="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,13 +62,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#009688"
+            android:background="#fbc3bc"
             android:onClick="goToLogActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/log_body_temperature"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF" />
+            android:textColor="#212529"
+            android:textStyle="bold|italic" />
 
         <View
             android:id="@+id/view3"
@@ -79,13 +81,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#009688"
+            android:background="#fbc3bc"
             android:onClick="goToNormalActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/check_normal_range"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF" />
+            android:textColor="#212529"
+            android:textStyle="bold|italic" />
 
         <View
             android:id="@+id/view4"
@@ -97,13 +100,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#009688"
+            android:background="#fde1de"
             android:onClick="goToMechanismActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/mechanism_of_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF" />
+            android:textColor="#212529"
+            android:textStyle="bold|italic" />
 
         <View
             android:id="@+id/view5"
@@ -115,13 +119,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#009688"
+            android:background="#fef0ef"
             android:onClick="goToHandleActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/handling_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF" />
+            android:textColor="#212529"
+            android:textStyle="bold|italic" />
 
         <View
             android:id="@+id/view6"
